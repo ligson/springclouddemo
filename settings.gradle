@@ -1,4 +1,10 @@
 rootProject.name = 'springclouddemo'
 include "configServer"
+//服务注册中心
 include "eurekaServer"
+//服务提供者，具体实现
 include "eurekaProvider"
+//Ribbon是一个基于HTTP和TCP客户端的负载均衡器。Feign中也使用Ribbon
+include "ribbonLB"
+//Feign是一个声明式的Web Service客户端，它使得编写Web Serivce客户端变得更加简单
+include "feign-consumer"
