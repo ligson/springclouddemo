@@ -1,0 +1,6 @@
+version '1.0-SNAPSHOT'
+ext {
+}
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
+}

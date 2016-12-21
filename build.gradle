@@ -15,7 +15,7 @@ subprojects {
     sourceCompatibility = 1.8
 
     ext {
-        springBootVersion = '1.4.0.RELEASE'
+        springBootVersion = '1.4.1.RELEASE'
         cloudVersion = "1.2.2.RELEASE"
     }
     repositories {
