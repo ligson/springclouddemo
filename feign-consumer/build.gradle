@@ -2,6 +2,6 @@ version '1.0-SNAPSHOT'
 ext {
 }
 dependencies {
-    compile "org.springframework.cloud:spring-cloud-starter-ribbon:${cloudVersion}"
-    compile "org.springframework.cloud:spring-cloud-starter-feign:${cloudVersion}"
+    compile "org.springframework.cloud:spring-cloud-starter-ribbon"
+    compile "org.springframework.cloud:spring-cloud-starter-feign"
 }
