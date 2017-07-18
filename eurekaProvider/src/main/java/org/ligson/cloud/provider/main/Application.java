@@ -11,8 +11,8 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @SpringBootApplication
 @ComponentScan("org.ligson.cloud.provider")
-public class ProviderMain {
+public class Application {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ProviderMain.class).web(true).run(args);
+        new SpringApplicationBuilder(Application.class).web(true).run(args);
     }
 }
