@@ -9,3 +9,5 @@ eureka:
 spring:
   application:
     name: service-register-dev
+logging:
+  file: /opt/service-register.log

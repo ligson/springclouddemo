@@ -12,3 +12,5 @@ eureka:
       defaultZone: http://cloud-register.e-lingcloud.com
 server:
   port: 8080
+logging:
+  file: /opt/config-server.log
