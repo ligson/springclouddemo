@@ -9,8 +9,8 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9999/eureka/
+      defaultZone: http://192.168.1.150:11001/eureka/
 server:
-  port: 7001
+  port: 11002
 logging:
   file: /opt/config-server.log
