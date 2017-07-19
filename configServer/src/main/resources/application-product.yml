@@ -5,7 +5,9 @@ spring:
     config:
       server:
         git:
-          uri:  git@repos.e-lingcloud.com:component/com.eling.cloud.config.files.git
+          uri: http://repos.e-lingcloud.com/component/com.eling.cloud.config.files.git
+          username: wuxian
+          password: wx.4489268..
 eureka:
   client:
     serviceUrl:
