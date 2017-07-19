@@ -9,6 +9,9 @@ spring:
           username: wuxian
           password: wx.4489268..
 eureka:
+  instance:
+        preferIpAddress: true
+        instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
   client:
     serviceUrl:
       defaultZone: http://192.168.1.150:11001/eureka/

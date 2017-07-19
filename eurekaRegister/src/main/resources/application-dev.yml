@@ -1,6 +1,9 @@
 server:
   port: 11001
 eureka:
+  instance:
+        preferIpAddress: true
+        instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
   client:
     register-with-eureka: false
     fetch-registry: false
