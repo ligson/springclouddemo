@@ -10,4 +10,4 @@ spring:
   application:
     name: service-register-dev
 logging:
-  file: /opt/service-register.log
+  file: /opt/cloud/service-register.log
