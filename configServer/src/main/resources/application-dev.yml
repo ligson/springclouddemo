@@ -13,4 +13,4 @@ eureka:
 server:
   port: 11002
 logging:
-  file: /opt/cloud/config-server.log
+  file: /opt/cloud/logs/config-server.log
