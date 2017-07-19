@@ -11,8 +11,8 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://cloud-register.e-lingcloud.com/eureka/
+      defaultZone: http://192.168.1.100:${server.port}/eureka/
 server:
-  port: 8080
+  port: 10010
 logging:
   file: /opt/config-server.log
