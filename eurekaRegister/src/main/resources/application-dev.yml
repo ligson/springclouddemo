@@ -1,6 +1,11 @@
 server:
   port: 11001
 eureka:
+  server:
+    #关闭自我保护
+    enable-self-preservation: false
+    #清理间隔(单位毫秒，默认是60*1000)
+    eviction-interval-timer-in-ms: 60000
   instance:
         preferIpAddress: true
         instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
