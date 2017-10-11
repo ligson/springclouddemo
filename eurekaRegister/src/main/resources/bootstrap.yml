@@ -1,0 +1,2 @@
+logging:
+  config: application-${spring.profiles.active}.yml

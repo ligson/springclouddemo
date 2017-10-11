@@ -1,5 +1,3 @@
-server:
-  port: 11001
 eureka:
   server:
     #关闭自我保护
@@ -13,7 +11,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://192.168.1.150:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
 spring:
   application:
-    name: service-register-dev
+    name: service-register-test
