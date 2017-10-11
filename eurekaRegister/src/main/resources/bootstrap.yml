@@ -1,2 +1,10 @@
+
 logging:
-  config: application-${spring.profiles.active}.yml
+  config: logback-${spring.profiles.active}.yml
+spring:
+  application:
+    name: service-regisger-${spring.profiles.active}
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}

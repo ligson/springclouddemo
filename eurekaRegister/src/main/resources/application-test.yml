@@ -4,14 +4,8 @@ eureka:
     enable-self-preservation: false
     #清理间隔(单位毫秒，默认是60*1000)
     eviction-interval-timer-in-ms: 60000
-  instance:
-        preferIpAddress: true
-        instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
   client:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
       defaultZone: http://127.0.0.1:${server.port}/eureka/
-spring:
-  application:
-    name: service-register-test
