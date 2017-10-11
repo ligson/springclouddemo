@@ -1,0 +1,10 @@
+
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+spring:
+  application:
+    name: config-service-${spring.profiles.active}
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
