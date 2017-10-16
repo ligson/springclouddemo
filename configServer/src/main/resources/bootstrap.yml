@@ -3,7 +3,7 @@ logging:
   config: classpath:logback-${spring.profiles.active}.xml
 spring:
   application:
-    name: config-service-${spring.profiles.active}
+    name: config-service
 eureka:
   instance:
     preferIpAddress: true
